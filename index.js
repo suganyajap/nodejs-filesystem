@@ -1,9 +1,12 @@
+ const env=require("dotenv").config()
 const fs=require("fs");
 const express=require("express");
 const { request } = require("http");
 const { response } = require("express");
 const app=express();
-const PORT=9000;
+// import dotenv from "dotenv";
+// dotenv.config();
+const PORT=process.env.PORT;
 
 //Home page
 app.get("/",(request,response)=>{
